@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bitbucket Count",
+  "description": "This extension will sum up the line counts of the diff",
+  "version": "1.0",
+  "update_url": "http://www.example.com/update.xml",
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    { "run_at" :"document_end",
+      "matches": ["https://bitbucket.org/*"],
+      "js": ["inject.js"]
+    } ],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+   ]
+}

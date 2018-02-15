@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bitbucket Count</title>
+    <script src="popup.js"></script>
+    <style media="screen">
+      div.container {
+        width: 200px;
+        font-size: 20px;
+        text-align: center;
+        font-family: monospace;
+        padding-bottom: 20px;
+      }
+      div.removed {
+        float: right;
+        width: 98px;
+        background-color: #ffdddd;
+        color: #cc3333;
+        border-radius: 0 5px 5px 0;
+      }
+      div.added {
+        float: left;
+        width: 98px;
+        background-color: #ccffcc;
+        color: #399839;
+        border-radius: 5px 0 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="added">
+        <span id="add">+0</span>
+      </div>
+      <div class="removed">
+        <span id="sub">-0</span>
+      </div>
+    </div>
+  </body>
+</html>
